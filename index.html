@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <title>HEX Colorizer</title>
+</head>
+<body>
+  <div id="mother">
+    <center>
+      <img src="images/bg.jpg" width="399">
+      <br>
+      <div id="dd"></div>
+    </center>
+  </div>
+  <br>
+  <div id="container">
+    <table>
+      <tr>
+        <th>[ RED ]</th>
+        <th>[ GREEN ]</th>
+        <th>[ BLUE ]</th>
+      </tr>
+      <tr>
+        <td><input type="range" min="0" max="255" value="255" id="r" onchange="changeRange();"></td>
+        <td><input type="range" min="0" max="255" value="255" id="g" onchange="changeRange();"></td>
+        <td><input type="range" min="0" max="255" value="255" id="b" onchange="changeRange();"></td>
+      </tr>
+      <tr>
+        <td id="r-label">255</td>
+        <td id="g-label">255</td>
+        <td id="b-label">255</td>
+      </tr>
+    </table>
+    <h2 id="hex-label">#ffffff</h2>
+    <br>
+    <p>Tajeddine BOURHIM</p>
+  </div>
+</body>
+</html>
